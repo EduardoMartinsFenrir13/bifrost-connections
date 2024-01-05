@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>BIFROST</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>BIFROST<br> <strong> A Conexão Intergalática</strong></h1>
+            <img src="animation.svg" class="left-login-" alt="animation">
+        </div>
+        <div class="right-login"></div>  
+        <div class="card-login" id="login-card">
+            <h1>Login</h1>
+            <div class="textfild">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" placeholder="Usuário" id="username">
+            </div>
+            <div class="textfild">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha" id="password">
+            </div>
+            <button class="btn-login" onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            
+            if (username === "Ragnar" && password === "Mionir") {
+                // Redirecionar para a segunda tela após o login bem-sucedido
+                window.location.href = "segtela.html";
+            } else {
+                alert("Usuário ou senha inválidos. Tente novamente.");
+            }
+        }
+    </script>
+    <footer>Desenvolvido por Eduardo Martins</footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-y: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* Estilos para a tela de login */
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #381111;
+    color: white;
+}
+
+.left-login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left-login img {
+    width: 50%;
+}
+
+.card-login {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 35px;
+    background: rgb(18, 65, 65);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #f8f8f8f6;
+}
+
+.card-login > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfild {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfild > input {
+    width: calc(100% - 30px);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #c9d8db;
+    color: #000;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfild > label {
+    color: rgb(247, 247, 247);
+    margin-bottom: 10px;
+}
+
+.textfild > input::placeholder {
+    color: #f0ffff;
+}
+
+.btn-login {
+    width: calc(100% - 50px);
+    padding: 20px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fff;
+    background: #77717179;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+footer {
+    color: burlywood;
+    background-color: #000;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+--------------------------/* Segunda tela */-------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial';
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.second-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.second-screen h1 {
+    color: #000000;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section div.second-screen video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move o vídeo para o fundo */
+}
+
+section div.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+section div.box img {
+    width: 100px;
+    height: auto;
+    margin-top: 80px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px; 
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #d1c7c7;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
